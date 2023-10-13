@@ -75,22 +75,3 @@ class MyStack:
             return len(self.stack) == 0
 
         return ValueError
-
-
-new_stack = MyStack()
-
-print(new_stack.min_value())
-
-new_stack.put(5)
-new_stack.put(2)
-
-print(new_stack.min_value())
-
-new_stack.put(10)
-new_stack.put(1)
-
-print(new_stack.min_value())
-
-new_stack.get()
-
-print(new_stack.min_value())
