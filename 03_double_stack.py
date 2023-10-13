@@ -1,5 +1,14 @@
-    """Use one list to store two stacks
-    """
+"""Use one list to store two stacks
+
+Implemented methods:
+    put1: Push in stack1.
+    put2: Push in stack2.
+    get1: Pop from stack1.
+    get2: Pop from stack2.
+    is_empty1: Check if stack1 is empty.
+    is_empty2: Check if stack2 is empty.
+"""
+
 
 class DoubleStack:
     def __init__(self, stack: list = [], top1=None, top2=None):

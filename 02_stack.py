@@ -1,13 +1,35 @@
+"""Stack using list
+
+Implemented methods:
+    min: Return min value in stack, None if stack is empty.
+    put: Push in stack.
+    get: Pop from stack.
+    peek: Pop from stack (keeping value in stack).
+    str_reverse: Reverse input string.
+    is_balanced_expression: Check if opening and ending symbols match.
+"""
+
+
 class MyStack:
-    def __init__(self, stack: list = []):
+    def __init__(self, stack: list = [], min=None):
         self.stack = stack
+        self.min = min
+
+    def min_value(self):
+        return self.min
 
     def put(self, value):
         self.stack.append(value)
+        self.min = min(self.stack)
         return self
 
     def get(self):
-        return self.stack.pop()
+        value = self.stack.pop()
+        if len(self.stack) == 0:
+            self.min = None
+        else:
+            self.min = min(self.stack)
+        return value
 
     def peek(self):
         return self.stack[-1]
@@ -53,3 +75,22 @@ class MyStack:
             return len(self.stack) == 0
 
         return ValueError
+
+
+new_stack = MyStack()
+
+print(new_stack.min_value())
+
+new_stack.put(5)
+new_stack.put(2)
+
+print(new_stack.min_value())
+
+new_stack.put(10)
+new_stack.put(1)
+
+print(new_stack.min_value())
+
+new_stack.get()
+
+print(new_stack.min_value())
