@@ -1,12 +1,17 @@
-"""Stack using list
+"""Stack using list and Double queues
 
-Implemented methods:
+Implemented methods for Stack with one list:
     min: Return min value in stack, None if stack is empty.
     put: Push in stack.
     get: Pop from stack.
     peek: Pop from stack (keeping value in stack).
     str_reverse: Reverse input string.
     is_balanced_expression: Check if opening and ending symbols match.
+
+Implemented methods for Stack with one list:
+    put: Push in stack.
+    get: Pop from stack.
+    peek: Pop from stack (keeping value in stack).
 """
 
 
@@ -17,6 +22,9 @@ class MyStack:
 
     def min_value(self):
         return self.min
+
+    def is_empty(self):
+        return len(self.stack) == 0
 
     def put(self, value):
         self.stack.append(value)
@@ -75,3 +83,46 @@ class MyStack:
             return len(self.stack) == 0
 
         return ValueError
+
+
+class DoubleQueueStack:
+    push_queue = []
+    pop_queue = []
+
+    def put(self, value):
+        if self.is_empty():
+            self.push_queue.append(value)
+        # elif len(self.push_queue) == 0 and len(self.pop_queue) != 0:
+        #     self.push_queue.append(value)
+        else:
+            while len(self.push_queue) != 0:
+                self.pop_queue.append(self.push_queue.pop(0))
+            self.push_queue.append(value)
+        return self
+
+    def get(self):
+        if self.is_empty():
+            return None
+        elif len(self.push_queue) == 0 and len(self.pop_queue) != 0:
+            while len(self.pop_queue) != 0:
+                self.push_queue.append(self.pop_queue.pop(0))
+            while len(self.push_queue) != 1:
+                self.pop_queue.append(self.push_queue.pop(0))
+            return self.push_queue.pop(0)
+        else:
+            return self.push_queue.pop(0)
+
+    def peek(self):
+        if self.is_empty():
+            return None
+        elif len(self.push_queue) == 0 and len(self.pop_queue) != 0:
+            while len(self.pop_queue) != 0:
+                self.push_queue.append(self.pop_queue.pop(0))
+            while len(self.push_queue) != 1:
+                self.pop_queue.append(self.push_queue.pop(0))
+            return self.push_queue[0]
+        else:
+            return self.push_queue[0]
+
+    def is_empty(self):
+        return len(self.push_queue) == 0 and len(self.pop_queue) == 0
