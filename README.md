@@ -16,3 +16,5 @@ Here we implement some of data structures and algorithms in python:
 7. [Queue with two stacks](https://github.com/saraeygh/data-structures-algorithms/blob/main/data-structures/double_stack_queue.py)
 
 8. [Hash-table (Chaining for collisions)](https://github.com/saraeygh/data-structures-algorithms/blob/main/data-structures/hash_table_chaining.py)
+
+9. [Hash-table (Chaining for collisions)](https://github.com/saraeygh/data-structures-algorithms/blob/main/data-structures/hash_table_linear_probing.py)
