@@ -1,7 +1,8 @@
 # Data structures and Algorithms
+
 Here we implement some of data structures and algorithms in python:
 
-## Data structures  
+## Data structures
 
 1. [Linked List](https://github.com/saraeygh/data-structures-algorithms/blob/main/data-structures/my_linked_list.py)
 
@@ -20,3 +21,5 @@ Here we implement some of data structures and algorithms in python:
 8. [Hash-table (Chaining for collisions)](https://github.com/saraeygh/data-structures-algorithms/blob/main/data-structures/hash_table_chaining.py)
 
 9. [Hash-table (Linear probing for collisions)](https://github.com/saraeygh/data-structures-algorithms/blob/main/data-structures/hash_table_linear_probing.py)
+
+10. [Binary trees](https://github.com/saraeygh/data-structures-algorithms/blob/main/data-structures/binary_tree.py)

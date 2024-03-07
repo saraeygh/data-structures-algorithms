@@ -171,28 +171,3 @@ class BinaryTree:
             print_nodes_at_distance(root.right_child, distance - 1)
 
         print_nodes_at_distance(self.root, distance=distance)
-
-
-new_tree_1 = BinaryTree()
-new_tree_1.insert(20)
-new_tree_1.insert(10)
-new_tree_1.insert(30)
-new_tree_1.insert(6)
-new_tree_1.insert(14)
-new_tree_1.insert(24)
-new_tree_1.insert(3)
-new_tree_1.insert(8)
-new_tree_1.insert(26)
-
-new_tree_2 = BinaryTree()
-new_tree_2.insert(20)
-new_tree_2.insert(10)
-new_tree_2.insert(30)
-new_tree_2.insert(6)
-new_tree_2.insert(14)
-new_tree_2.insert(24)
-new_tree_2.insert(3)
-new_tree_2.insert(8)
-new_tree_2.insert(28)
-
-new_tree_1.nodes_at_distance(distance=4)
