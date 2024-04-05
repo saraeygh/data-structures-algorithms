@@ -22,4 +22,6 @@ Here we implement some of data structures and algorithms in python:
 
 9. [Hash-table (Linear probing for collisions)](https://github.com/saraeygh/data-structures-algorithms/blob/main/data-structures/hash_table_linear_probing.py)
 
-10. [Binary search trees](https://github.com/saraeygh/data-structures-algorithms/blob/main/data-structures/binary_search_tree.py)
+10. [Binary search tree](https://github.com/saraeygh/data-structures-algorithms/blob/main/data-structures/binary_search_tree.py)
+
+11. [AVL (Adelson-Velsky and Landis) tree (A self-balancing tree)](https://github.com/saraeygh/data-structures-algorithms/blob/main/data-structures/avl_tree.py)
