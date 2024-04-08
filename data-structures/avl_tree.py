@@ -1,6 +1,6 @@
 """Implement AVL (Adelson-Velsky and Landis) tree in python
 
-Implemented methods for binary search tree:
+Implemented methods for AVL tree:
     __new_node: Return an AVLNode object with given value.
     is_empty: True if tree is empty, otherwise False.
     __height: Return the height of the given node.
