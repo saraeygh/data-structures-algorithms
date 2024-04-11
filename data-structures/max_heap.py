@@ -1,17 +1,17 @@
-"""Implement Heaps in python
+"""Implement Max Heaps in python
 
-Implemented methods for heap:
-    is_empty: True if heap is empty.
-    insert: Insert the given value into heap.
-    remove: Remove value (root value) from heap.
+Implemented methods for max heap:
+    is_empty: True if max heap is empty.
+    insert: Insert the given value into max heap.
+    remove: Remove value (root value) from max heap.
     heap_max: Return heap max value (root value).
-    k_th_largest: Return k-th largest value of heap.
-    bubble_up: Move up new inserted value to its right position in heap.
-    bubble_down: After remove, move down new root to its right position in heap.
+    k_th_largest: Return k-th largest value of max heap.
+    bubble_up: Move up new inserted value to its right position in max heap.
+    bubble_down: After remove, move down new root to its right position in max heap.
 """
 
 
-class Heap:
+class MaxHeap:
     def __init__(self):
         self.items: list = []
         self.size: int = 0

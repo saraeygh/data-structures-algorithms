@@ -1,11 +1,11 @@
-"""Implement Heapify in python
+"""Implement Max-Heapify in python
 
-Implemented heapify method:
-    heapify: Heapify given list in-place.
+Implemented max-heapify method:
+    max_heapify: Max-Heapify given list in-place.
 """
 
 
-class Heapify:
+class MaxHeapify:
 
     def __init__(self) -> None:
         pass
@@ -41,7 +41,7 @@ class Heapify:
 
         self.__heapify(items_list, value)
 
-    def heapify(self, items_list: list):
+    def max_heapify(self, items_list: list):
         main_list = items_list.copy()
         # iter_num = int(len(main_list) / 2)
         iter_num = len(main_list)

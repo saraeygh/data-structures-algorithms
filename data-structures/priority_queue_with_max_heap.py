@@ -1,4 +1,4 @@
-"""Implement Priority Queue with Heap in python
+"""Implement Priority Queue with Max Heap in python
 
 Implemented methods for priority queue:
     is_empty: True if priority queue us empty. otherwise False.
@@ -6,12 +6,12 @@ Implemented methods for priority queue:
     dequeue: Dequeue from priority queue.
 """
 
-from heap import Heap
+from max_heap import MaxHeap
 
 
 class PriorityQueueWithHeap:
     def __init__(self):
-        self.priority_queue: Heap = Heap()
+        self.priority_queue: MaxHeap = MaxHeap()
 
     def is_empty(self):
         return self.priority_queue.is_empty

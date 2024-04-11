@@ -26,4 +26,4 @@ Here we implement some of data structures and algorithms in python:
 
 11. [AVL (Adelson-Velsky and Landis) tree (A self-balancing tree)](https://github.com/saraeygh/data-structures-algorithms/blob/main/data-structures/avl_tree.py)
 
-12. [Heap](https://github.com/saraeygh/data-structures-algorithms/blob/main/data-structures/heap.py), [Priority queue with heap](https://github.com/saraeygh/data-structures-algorithms/blob/main/data-structures/priority_queue_with_heap.py) and [Heapify](https://github.com/saraeygh/data-structures-algorithms/blob/main/data-structures/heapify.py)
+12. [Max Heap](https://github.com/saraeygh/data-structures-algorithms/blob/main/data-structures/max_heap.py), [Priority queue with max heap](https://github.com/saraeygh/data-structures-algorithms/blob/main/data-structures/priority_queue_with_max_heap.py) and [Max-Heapify](https://github.com/saraeygh/data-structures-algorithms/blob/main/data-structures/max_heapify.py)
