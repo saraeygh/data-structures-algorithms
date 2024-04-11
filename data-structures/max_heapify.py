@@ -1,4 +1,4 @@
-"""Implement Max-Heapify in python
+"""Implement Max-Heapify in python (Stores Integers!)
 
 Implemented max-heapify method:
     max_heapify: Max-Heapify given list in-place.

@@ -1,15 +1,15 @@
-"""Implement Priority Queue with Max Heap in python
+"""Implement Max Priority Queue with Heap in python (Stores Integers!)
 
-Implemented methods for priority queue:
-    is_empty: True if priority queue us empty. otherwise False.
-    enqueue: Enqueue given value into priority queue.
-    dequeue: Dequeue from priority queue.
+Implemented methods for max priority queue:
+    is_empty: True if max priority queue us empty. otherwise False.
+    enqueue: Enqueue given value into max priority queue.
+    dequeue: Dequeue from max priority queue.
 """
 
 from max_heap import MaxHeap
 
 
-class PriorityQueueWithHeap:
+class MaxPriorityQueueWithHeap:
     def __init__(self):
         self.priority_queue: MaxHeap = MaxHeap()
 
