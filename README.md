@@ -37,3 +37,5 @@ Here we implement some of data structures and algorithms in python:
 16. [Min priority queue with heap](https://github.com/saraeygh/data-structures-algorithms/blob/main/data-structures/min_priority_queue_with_heap.py)
 
 17. [Trie (A ReTrieval Data Structure)](https://github.com/saraeygh/data-structures-algorithms/blob/main/data-structures/trie.py)
+
+18. [Directed Graph](https://github.com/saraeygh/data-structures-algorithms/blob/main/data-structures/directed_graph.py)
